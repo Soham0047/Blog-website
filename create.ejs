@@ -1,0 +1,13 @@
+<%- include("partials/header", { title: "Create Post" }) %>
+    <div class="form-container">
+        <form action="/create" method="POST">
+            <div>
+                <input type="text" name="title" placeholder="Post Title" required>
+            </div>
+            <div>
+                <textarea name="content" placeholder="Write your content here..." required></textarea>
+            </div>
+            <button type="submit" class="button">Publish Post</button>
+        </form>
+    </div>
+<%- include("partials/footer") %>
